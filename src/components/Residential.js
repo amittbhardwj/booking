@@ -1,8 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Residential() {
   return (
     <div className="Residential">
+      <br />
+      <br />
+      <hr />
       <h2>How long do you need Mates for?</h2>
       <input
         className="box"
@@ -20,6 +24,10 @@ export default function Residential() {
         pattern="[0-9]*"
       />
       Minutes
+      <hr />
+      <Link to="/day">
+        <button>Next</button>
+      </Link>
     </div>
   );
 }
